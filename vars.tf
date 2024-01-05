@@ -4,6 +4,6 @@ variable "tags" {}
 variable "backup_retention_period" {}
 variable "preferred_backup_window" {}
 variable "skip_final_snapshot" {}
-variable "var_id" {}
+variable "vpc_id" {}
 variable "sg_ingress_cidr" {}
 variable "engine_version" {}
