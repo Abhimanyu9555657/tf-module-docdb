@@ -11,9 +11,9 @@ resource "aws_security_group" "main" {
   tags        = merge(local.tags, { Name = "${local.name_prefix}-sg" })
 
   ingress {
-    description = "APP"
-    from_port   = var.sg_port
-    to_port     = var.sg_port
+    description = "DOCDB"
+    from_port   = 27017
+    to_port     = 27017
     protocol    = "tcp"
     cidr_blocks = var.sg_ingress_cidr
   }
